@@ -4,6 +4,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 box-sizing: border-box;
+cursor: none;
 }
 
 .navigation1{
@@ -99,7 +100,7 @@ box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(50px);
     visibility: hidden;
-    transition: 0.3s ease-out;
+    transition: 0.2s;
     border-radius: 10px;
     top: 0;
 }
@@ -111,6 +112,7 @@ box-sizing: border-box;
     width: 97%;
     height: 1080px;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 .liste li a{
@@ -1745,4 +1747,143 @@ z-index: 1;
 .sect-17 .checkbox:checked ~ .svg-icon{
     transform: rotate(360deg) scale(1);
     transition: ease-in 0.2s;
+}
+
+/*----------------------------------------------------------------------------------------------------------------- */
+
+.sect-18-banner{
+    background-color: #39A7FF;
+    border-radius: 15px;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sect-18 {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.sect-18 .vlrt{
+    height: 100px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 3px solid;
+    color: #f5f5f5;
+    border-color: #b6b6b6;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(50px);
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sect-18 .vlrt:hover{
+    border-color: #16FF00;
+    letter-spacing: 2px;
+    font-size: 21px;
+    color: #fefefe;
+    text-shadow: 0 0.3rem #333;
+    box-shadow: #16FF00 0px -30px 40px -30px inset;
+}
+
+.sect-18 .vlrt .green{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #16FF00;
+    
+}
+
+.sect-18 .vlrt .green{
+    content: "";
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(182, 182, 182);
+    transform: rotate(49deg) translateX(-32px) translateY(0px);
+    
+}
+
+.sect-18 .vlrt:hover .green{
+    background-color: #16FF00;
+    transition: 0.5s;
+}
+
+.sect-18 .vlrt:active {
+    letter-spacing: 0px;
+    text-shadow: 0 0rem #333;
+    transition: 0.1s;
+    background-color: #1abc9c;
+}
+
+/*----------------------------------------------------------------------------------------------------------------- */
+
+.sect-19-banner{
+    background-color: #000;
+    border-radius: 15px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sect-19 {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.sect-19 ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sect-19 ul li{
+    list-style: none;
+}
+
+.sect-19 ul li a {
+   display: inline-block; 
+   margin: 10px 0;
+   font-size: 4em;
+   text-decoration: none;
+   color: #fff;
+   transition: 0.2s;
+}
+
+.sect-19 ul li:hover ~ .cursor{
+    transform: scale(6);
+    background-color: #fefefe;
+    mix-blend-mode: difference;
+    transition: 0.1s;
+
+}
+
+.cursor{
+    position: fixed;
+    z-index: 9999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
