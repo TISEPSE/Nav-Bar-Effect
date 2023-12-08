@@ -110,7 +110,7 @@ cursor: none;
     visibility: visible;
     z-index: 999;
     width: 97%;
-    height: 1080px;
+    height: 100%;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -137,7 +137,8 @@ cursor: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: 0.2s;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 25px;
+    gap: 0.35em;
     cursor: pointer;
     text-decoration: none;
 }
@@ -159,7 +160,7 @@ cursor: none;
 }
 
 .liste li a:hover span{
-    width: 25%;   
+    width: 35%;   
 }
 
 
@@ -290,6 +291,7 @@ cursor: none;
 
 @media all and (max-width: 1297px) {
 
+
     .sect-3{
         display: flex;
         flex-direction: column;
@@ -297,6 +299,27 @@ cursor: none;
         align-items: center;
     }
     }    
+
+    
+@media all and (max-width: 1000px) {
+  
+    .liste.active li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fefefe;
+        flex-direction: column;
+        font-size: 100px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transition: 0.2s;
+        text-transform: uppercase;
+        margin-top: 1.5em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    }
+
+
 
 .sect-0{
     background: #2c3e50;
