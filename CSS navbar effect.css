@@ -4,7 +4,6 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 box-sizing: border-box;
-cursor: none;
 }
 
 .navigation1{
@@ -288,9 +287,21 @@ cursor: none;
     transition: 0.3s;
 }
 
+@media all and (min-width: 1000px){
+    .cursor{
+        position: fixed;
+        z-index: 9999;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fefefe;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+}
 
 @media all and (max-width: 1297px) {
-
 
     .sect-3{
         display: flex;
@@ -1892,21 +1903,3 @@ z-index: 1;
    transition: 0.2s;
 }
 
-.sect-19 ul li:hover ~ .cursor{
-    transform: scale(6);
-    background-color: #fefefe;
-    mix-blend-mode: difference;
-    transition: 0.1s;
-
-}
-
-.cursor{
-    position: fixed;
-    z-index: 9999;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #f1f1f1;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
