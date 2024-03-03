@@ -347,7 +347,7 @@ cursor: none;
     .navigation1 .menuToggle1 .line1 {
         content: '';
         background-color: #fff;
-        margin-left: 2vh;
+        margin-left: 19px;
         top: 35%;
         width: 40px;
         height: 4px;
@@ -358,7 +358,7 @@ cursor: none;
     .navigation1 .menuToggle1 .line2 {
         content: '';
         background-color: #fff;
-        margin-left: 2vh;
+        margin-left: 19px;
         top: 65%;
         width: 40px;
         height: 4px;
@@ -369,7 +369,7 @@ cursor: none;
     .navigation1 .menuToggle1 .line3 {
         content: '';
         background-color: #fff;
-        margin-left: 2vh;
+        margin-left: 19px;
         top: 95%;
         width: 40px;
         height: 4px;
