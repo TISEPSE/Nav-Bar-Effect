@@ -322,8 +322,8 @@ cursor: none;
     .navigation1{
         position: fixed;
         z-index: 1000;
-        height: 100px;
-        width: 100px;
+        height: 75px;
+        width: 75px;
         background-color: #1abc9c;
         backdrop-filter: blur(25px);
         top: 25px;
@@ -347,7 +347,7 @@ cursor: none;
     .navigation1 .menuToggle1 .line1 {
         content: '';
         background-color: #fff;
-        margin-left: 17px;
+        margin-left: 18px;
         top: 35%;
         width: 40px;
         height: 4px;
@@ -358,7 +358,7 @@ cursor: none;
     .navigation1 .menuToggle1 .line2 {
         content: '';
         background-color: #fff;
-        margin-left: 17px;
+        margin-left: 18px;
         top: 65%;
         width: 40px;
         height: 4px;
@@ -369,7 +369,7 @@ cursor: none;
     .navigation1 .menuToggle1 .line3 {
         content: '';
         background-color: #fff;
-        margin-left: 17px;
+        margin-left: 18px;
         top: 95%;
         width: 40px;
         height: 4px;
