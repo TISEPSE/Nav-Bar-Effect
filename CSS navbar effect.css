@@ -160,7 +160,7 @@ cursor: none;
 }
 
 .liste li a:hover span{
-    width: 35%;   
+    width: 5em;   
 }
 
 
@@ -324,7 +324,7 @@ cursor: none;
         z-index: 1000;
         height: 75px;
         width: 75px;
-        background-color: #1abc9c;
+        background-color: #23c483;
         backdrop-filter: blur(25px);
         top: 25px;
         left: 25px;
