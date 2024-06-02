@@ -60,10 +60,23 @@ const span = document.querySelector('.bck-grnd');
      }
 
      document.addEventListener('DOMContentLoaded', function(){
-        let cursor =document.querySelector (".cursor")
+        let cursor = document.querySelector (".cursor")
         
         document.addEventListener('mousemove' , function(e) {
             cursor.style.left = e.clientX+ 'px'
             cursor.style.top = e.clientY+ 'px'
         })
+     })
+     
+
+     let prev = document.querySelector('.prev');
+     let next = document.querySelector('.next');
+ 
+     next.addEventListener('click', function(){
+       let items = document.querySelectorAll('.item');
+       document.querySelector('.box1').appendChild(items[0]);
+     })
+     prev.addEventListener('click', function(){
+       let items = document.querySelectorAll('.item');
+       document.querySelector('.box1').prepend(items[items.length - 1]);
      })
