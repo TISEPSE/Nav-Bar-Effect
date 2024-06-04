@@ -32,6 +32,9 @@
 
 <body>
 
+  <div class="loader"></div>  <!-- c'est le logo du chargement -->
+
+
   <div class="navigation1">
     <div class="menuToggle1">
 
@@ -455,10 +458,17 @@
 
   <script>
 
-   
+window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
 
-  
-  </script>
+      loader.classList.add("loader--hidden");
+
+      loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+      });
+    });
+   
+   </script>
 
   <script src="script-navbar.js"></script>
 
